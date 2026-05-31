@@ -1,0 +1,118 @@
+import { FaInstagram, FaReact, FaFacebook, FaDocker, FaGitAlt } from "react-icons/fa";
+import { RiJavascriptFill, RiLinkedinFill, RiTailwindCssFill } from "react-icons/ri";
+import { FaNodeJs } from "react-icons/fa";
+import { SiExpress, SiFastapi, SiPostgresql, SiPython, SiNextdotjs, SiHtml5 } from "react-icons/si";
+import { PiGithubLogoFill } from "react-icons/pi";
+import { FaXTwitter } from "react-icons/fa6";
+import { IoIosMail } from "react-icons/io";
+import Link from "next/link";
+
+import React from "react";
+
+const frontendSkills = [
+  { icon: <RiJavascriptFill size={50} className="text-yellow-500" />, label: "Javascript" },
+  { icon: <FaReact size={50} className="text-sky-500" />, label: "React JS" },
+  { icon: <SiNextdotjs size={50} className="text-black" />, label: "Next JS" },
+  { icon: <SiHtml5 size={50} className="text-orange-500" />, label: "HTML5" },
+  { icon: <RiTailwindCssFill size={50} className="text-cyan-400" />, label: "Tailwind CSS" },
+  { icon: <SiPython size={50} className="text-blue-500" />, label: "Python" },
+  { icon: <SiFastapi size={50} className="text-green-500" />, label: "FastAPI" },
+];
+
+const backendSkills = [
+  { icon: <FaNodeJs size={45} className="text-green-500" />, label: "Node Js" },
+  { icon: <SiExpress size={45} className="text-black" />, label: "Express JS" },
+  { icon: <SiPostgresql size={45} className="text-blue-700" />, label: "PostgreSQL" },
+  { icon: <FaDocker size={45} className="text-blue-500" />, label: "Docker" },
+  { icon: <FaGitAlt size={45} className="text-orange-600" />, label: "Git" },
+];
+
+const About = React.memo(function About() {
+  return (
+    <main
+      className="min-h-[calc(100svh-5.03rem)] lg:p-6 p-1 justify-between items-center"
+      id="about"
+    >
+      <section className="flex items-center gap-4 pt-3">
+        <p className="text-xl lg:text-2xl font-bold border-l-4 border-blue-600 pl-3">About Me</p>
+      </section>
+
+      <section className="flex flex-col-reverse lg:flex-row lg:p-6 p-4 gap-6 mt-6">
+        {/* left Section */}
+        <section className="w-full p-2 rounded-xl py-6 lg:py-0.5 shadow-sm flex  flex-col max-md:gap-6 card lg:p-4">
+          <section className="flex items-center gap-4 h-1/5 ">
+            <p className="text-xl lg:text-2xl font-bold border-l-4 border-blue-600 pl-3">My Skills</p>
+          </section>
+          <section className="p-2 flex gap-6 justify-center flex-wrap text-lg">
+            {frontendSkills.map((skill, idx) => (
+              <div key={skill.label} className="flex justify-center items-center flex-col">
+                {skill.icon}
+                {skill.label}
+              </div>
+            ))}
+          </section>
+          <section className="p-2 flex gap-6 justify-center flex-wrap text-lg">
+            {backendSkills.map((skill, idx) => (
+              <div key={skill.label} className="flex justify-center items-center flex-col">
+                {skill.icon}
+                {skill.label}
+              </div>
+            ))}
+          </section>
+        </section>
+
+        {/* Right Section */}
+        <section className="w-full p-3 flex flex-col justify-start gap-4 text-xl rounded-xl py-6 lg:p-6 card bg-white shadow-md border border-gray-100">
+          <section className="flex items-center gap-4 ">
+            <p className="font-bold text-xl lg:text-2xl border-l-4 border-blue-600 pl-3">More about Me</p>
+          </section>
+          <p className="lg:text-xl text-lg text-gray-700 font-normal">
+            I&apos;m a self-taught full-stack software engineer with 2+ years of hands-on experience building modern, end-to-end web applications. I started from zero, learning by building real products, and that foundation has made me a developer who understands every layer of the stack.
+          </p>
+          <p className="lg:text-xl text-lg text-gray-700 font-normal">
+            I work across the full stack, React, Node.js, Express.js, FastAPI, PostgreSQL, and MongoDB, and use Tailwind CSS to create responsive, polished interfaces that users actually enjoy.
+          </p>
+          <p className="lg:text-xl text-lg text-gray-700 font-normal">
+            Over the past 2+ years I&apos;ve shipped products across SaaS, automotive eCommerce, and lead generation, owning everything from API design and database modelling to containerization with Docker and deployment on Vercel and Render.
+          </p>
+          <p className="lg:text-xl text-lg text-gray-700 font-normal">
+            I&apos;m a fast learner who adapts quickly to any language or stack a project requires. Currently open to new opportunities, let&apos;s build something great together.
+          </p>
+          <section className="flex max-md:flex-col gap-6 md:items-center">
+            {/* Social Media Icons */}
+            <section className="flex items-center gap-4 mt-3">
+              <a href="https://www.linkedin.com/in/imoh-alfred-99a4a8258" target="_blank" rel="noreferrer" aria-label="Goto my linkedin profile">
+                <RiLinkedinFill className="bg-white transform hover:-translate-y-1.5 w-12 h-12 rounded-xl duration-500 text-blue-500 hover:bg-blue-500 p-1.5 hover:text-white" />
+              </a>
+              <a href="https://github.com/Imohalfreddev" target="_blank" rel="noreferrer" aria-label="Goto my github profile">
+                <PiGithubLogoFill className="bg-white transform hover:-translate-y-1.5 w-12 h-12 rounded-xl duration-500 text-black hover:bg-black p-1.5 hover:text-white" />
+              </a>
+              <a href="https://x.com/Alfred_Imoh" target="_blank" rel="noreferrer" aria-label="Goto my x profile">
+                <FaXTwitter className="bg-white transform hover:-translate-y-1.5 w-12 h-12 rounded-xl duration-500 text-black hover:bg-black p-1.5 hover:text-white" />
+              </a>
+              <a href="https://www.instagram.com/imoh_automation?igsh=NzhhcWpranc1amY2" target="_blank" rel="noreferrer" aria-label="Goto my instagram profile">
+                <FaInstagram className="bg-white transform hover:-translate-y-1.5 w-12 h-12 rounded-xl duration-500 text-pink-500 hover:bg-pink-500 p-1.5 hover:text-white" />
+              </a>
+              <a href="https://www.facebook.com/profile.php?id=61589650123060" target="_blank" rel="noreferrer" aria-label="Goto my facebook profile">
+                <FaFacebook className="bg-white transform hover:-translate-y-1.5 w-12 h-12 rounded-xl duration-500 text-blue-600 hover:bg-blue-600 p-1.5 hover:text-white" />
+              </a>
+            </section>
+            {/* Buttons */}
+            <section className="flex gap-4">
+              <Link href="mailto:imohalfred8@gmail.com">
+                <button
+                  className="flex items-center px-3 py-2 bg-blue-700 hover:bg-blue-800 rounded-md text-white outline-none focus:ring-1 shadow-lg transform active:scale-y-90 transition-transform"
+                  aria-label="Contact Button"
+                >
+                  <IoIosMail size={24} />
+                  <span className="ml-1.5 md:text-lg">Contact</span>
+                </button>
+              </Link>
+            </section>
+          </section>
+        </section>
+      </section>
+    </main>
+  );
+});
+export default About;

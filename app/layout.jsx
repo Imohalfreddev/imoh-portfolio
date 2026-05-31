@@ -1,0 +1,95 @@
+import { Inter } from "next/font/google";
+import "./globals.css";
+import Provider from "@/components/Provider";
+
+const inter = Inter({ subsets: ["latin"] });
+
+export const metadata = {
+  title:
+    "Alfred Imoh – Full Stack Web Developer | MERN & JavaScript Developer",
+  description:
+    "Alfred Imoh is a Full Stack Web Developer from Buxar, Bihar, and a 2024 Computer Science graduate from Gyan Ganga Institute of Technology and Sciences, Jabalpur. He builds fast, clean, and responsive web apps using React, Node.js, Express, MongoDB, NestJS, and TypeScript.",
+  keywords: [
+    "Alfred",
+    "Alfred Imoh",
+    "theavnishkumar",
+    "Alfred Imoh web developer",
+    "Alfred Imoh full stack developer",
+    "Alfred Imoh MERN developer",
+    "Alfred Imoh NestJS",
+    "Alfred Imoh JavaScript",
+    "Alfred Imoh Jabalpur",
+    "Alfred Imoh Buxar",
+    "Alfred Imoh portfolio",
+    "Full Stack Developer India",
+    "MERN Stack Developer Bihar",
+    "JavaScript Developer India",
+    "React Node Developer",
+  ],
+  authors: [
+    { name: "Alfred Imoh" },
+    { name: "Alfred Imoh", url: "https://theavnishkumar.in" },
+  ],
+  creator: "Alfred Imoh",
+  publisher: "Alfred Imoh",
+  category: "Technology",
+  metadataBase: new URL("https://theavnishkumar.in"),
+  formatDetection: {
+    email: true,
+    address: false,
+    telephone: false,
+  },
+  openGraph: {
+    title: "Alfred Imoh – Full Stack Developer | React, Node, MongoDB",
+    description:
+      "Explore the portfolio of Alfred Imoh, a Full Stack Developer skilled in MERN stack, TypeScript, Java, and more. Based in Bihar, India – building modern web apps with React, Node.js, and MongoDB.",
+    url: "https://theavnishkumar.in",
+    siteName: "Alfred Imoh",
+    images: [
+      {
+        url: "/avnishkumar/avnish.jpg",
+        width: 600,
+        height: 600,
+      },
+      {
+        url: "/avnishkumar/avnishkumar.jpg",
+        width: 500,
+        height: 600,
+      },
+    ],
+    locale: "en_US",
+    type: "website",
+  },
+  icons: {
+    icon: "/icon.png",
+    shortcut: "/shortcut-icon.png",
+    apple: "/apple-icon.png",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Alfred Imoh – Full Stack Developer | React & Node.js",
+    description:
+      "Alfred Imoh is a Full Stack Web Developer from Bihar, India. Skilled in JavaScript, React, Node.js, MongoDB, NestJS, and more. Visit portfolio to know more.",
+    siteId: "",
+    creator: "@theavnishkumar",
+    creatorId: "@theavnishkumar",
+    images: ["/avnishkumar/avnishkumar.jpg"],
+  },
+  verification: {
+    google: "google",
+    yandex: "yandex",
+    yahoo: "yahoo",
+  },
+};
+
+export default function RootLayout({ children }) {
+  return (
+    <html lang="en">
+      <body
+        className={`${inter.className} bg-small bg-fixed bg-cover bg-center min-h-screen`}
+      >
+        <Provider>{children}</Provider>
+      </body>
+    </html>
+  );
+}

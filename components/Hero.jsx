@@ -1,0 +1,139 @@
+"use client";
+import Image from "next/image";
+import { RiLinkedinFill } from "react-icons/ri";
+import { PiGithubLogoFill } from "react-icons/pi";
+import { FaXTwitter } from "react-icons/fa6";
+import { FaInstagram, FaFacebook, FaWhatsapp } from "react-icons/fa";
+import { IoIosMail } from "react-icons/io";
+import { IoDocumentText } from "react-icons/io5";
+import Link from "next/link";
+
+const Hero = () => {
+  const handleDownloadResume = () => {
+    const link = document.createElement("a");
+    link.href = "/resume/Alfred_Imoh_Resume.pdf";
+    link.download = "Alfred_Imoh_Resume.pdf";
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
+  return (
+    <main className="min-h-[calc(100svh-5.03rem)] md:flex-row flex flex-col-reverse justify-center items-center gap-4">
+      {/* Left Section */}
+      <section className=" max-w-3xl min-h-xl p-4 flex flex-col gap-3 m-4">
+        <p className="lg:text-3xl text-2xl font-medium">👋 Hi, I am</p>
+        <h1 className="lg:text-5xl text-4xl font-bold text-blue-700">
+          Alfred Imoh
+        </h1>
+        <h2 className="lg:text-4xl text-3xl font-medium">
+          I am a Full Stack Developer
+        </h2>
+        <p className="lg:text-2xl text-lg text-gray-600">
+          I&apos;m a full-stack software engineer who builds modern, end-to-end web applications with a focus on clean code and real-world impact. I work across the full stack, React, Node.js, FastAPI, PostgreSQL, and Docker.
+        </p>
+
+        <p className="lg:text-2xl text-lg text-gray-600">
+          I use Tailwind CSS to create responsive, polished interfaces and have shipped products across SaaS, eCommerce, and lead generation. I&apos;m a fast learner who adapts quickly to any stack a project requires. Currently open to new opportunities.
+        </p>
+
+        <section className="flex flex-col gap-6">
+          {/* Social Media Icons */}
+          <section className="flex items-center gap-4 mt-3">
+            {/* Linkedin */}
+            <a
+              href="https://www.linkedin.com/in/imoh-alfred-99a4a8258"
+              target="_blank"
+              rel="noreferrer"
+              aria-label="Goto my linkedin profile"
+            >
+              <RiLinkedinFill className="bg-white transform hover:-translate-y-1.5 w-12 h-12 rounded-xl duration-500 text-blue-500 hover:bg-blue-500 p-1.5 hover:text-white" />
+            </a>
+            {/* Github */}
+            <a
+              href="https://github.com/Imohalfreddev"
+              target="_blank"
+              rel="noreferrer"
+              aria-label="Goto my github profile"
+            >
+              <PiGithubLogoFill className="bg-white transform hover:-translate-y-1.5 w-12 h-12 rounded-xl duration-500 text-black  hover:bg-black p-1.5 hover:text-white" />
+            </a>
+            {/* X */}
+            <a
+              href="https://x.com/Alfred_Imoh"
+              target="_blank"
+              rel="noreferrer"
+              aria-label="Goto my x profile"
+            >
+              <FaXTwitter className="bg-white transform hover:-translate-y-1.5 w-12 h-12 rounded-xl duration-500 text-black hover:bg-black p-1.5 hover:text-white" />
+            </a>
+            {/* Instagram */}
+            <a
+              href="https://www.instagram.com/imoh_automation?igsh=NzhhcWpranc1amY2"
+              target="_blank"
+              rel="noreferrer"
+              aria-label="Goto my instagram profile"
+            >
+              <FaInstagram className="bg-white transform hover:-translate-y-1.5 w-12 h-12 rounded-xl duration-500 text-pink-500 hover:bg-pink-500 p-1.5 hover:text-white" />
+            </a>
+            {/* Facebook */}
+            <a
+              href="https://www.facebook.com/profile.php?id=61589650123060"
+              target="_blank"
+              rel="noreferrer"
+              aria-label="Goto my facebook profile"
+            >
+              <FaFacebook className="bg-white transform hover:-translate-y-1.5 w-12 h-12 rounded-xl duration-500 text-blue-600 hover:bg-blue-600 p-1.5 hover:text-white" />
+            </a>
+          </section>
+          {/* Buttons */}
+          <section className="flex gap-4">
+            <Link href="mailto:imohalfred8@gmail.com">
+              <button
+                className="flex items-center px-3 py-2 bg-blue-700 hover:bg-blue-800 rounded-md text-white outline-none focus:ring-1 shadow-lg transform active:scale-y-90 transition-transform"
+                aria-label="Contact Button"
+              >
+                <IoIosMail size={24} />
+                <span className="ml-1.5 md:text-lg">Contact</span>
+              </button>
+            </Link>
+
+            <button
+              className="flex items-center px-3 py-2 bg-red-700 hover:bg-red-800 rounded-md text-white outline-none focus:ring-1 shadow-lg transform active:scale-y-90 transition-transform"
+              onClick={handleDownloadResume}
+              aria-label="Resume Download Button"
+            >
+              <IoDocumentText size={22} />
+              <span className="ml-1.5 md:text-lg">Resume</span>
+            </button>
+          </section>
+        </section>
+      </section>
+
+      {/* Right Section */}
+      <section className=" lg:max-w-lg p-4 max-lg:hidden">
+        <Image
+          className="max-w-xl rounded-xl"
+          src="/hero/bg.svg"
+          alt="Alfred Imoh"
+          height={300}
+          width={350}
+          style={{
+            width: "350px",
+            height: "auto",
+          }}
+        />
+      </section>
+      {/* Floating WhatsApp Button */}
+      <a
+        href="https://wa.me/2348068953918"
+        target="_blank"
+        rel="noreferrer"
+        aria-label="Chat on WhatsApp"
+        className="fixed bottom-6 right-6 z-50 bg-green-500 hover:bg-green-600 text-white w-14 h-14 rounded-full flex items-center justify-center shadow-lg transform hover:scale-110 transition-all duration-300"
+      >
+        <FaWhatsapp size={30} />
+      </a>
+    </main>
+  );
+};
+export default Hero;

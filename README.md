@@ -1,4 +1,4 @@
-# Avnish Kumar's Portfolio
+# Imohalfred's Portfolio
 
 Welcome to the repository for my personal portfolio website, built using Next.js, Tailwind CSS, and Resend for email functionality. This guide will help you set up and run the project locally.
 

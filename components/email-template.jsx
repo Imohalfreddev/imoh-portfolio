@@ -22,7 +22,6 @@ export const EmailTemplate = ({ messageData, name, email }) => (
             border: "1px solid #e5e7eb",
           }}
         >
-
           <tr>
             <td
               style={{
@@ -32,7 +31,6 @@ export const EmailTemplate = ({ messageData, name, email }) => (
               }}
             />
           </tr>
-
 
           <tr>
             <td style={{ padding: "24px 24px 10px 24px" }}>
@@ -47,7 +45,6 @@ export const EmailTemplate = ({ messageData, name, email }) => (
               </h3>
             </td>
           </tr>
-
 
           <tr>
             <td style={{ padding: "16px 24px" }}>
@@ -66,7 +63,6 @@ export const EmailTemplate = ({ messageData, name, email }) => (
                     <p style={{ margin: "0 0 8px 0", fontSize: "14px" }}>
                       <strong>{name}</strong> wrote:
                     </p>
-
                     <p
                       style={{
                         margin: "0",
@@ -87,12 +83,7 @@ export const EmailTemplate = ({ messageData, name, email }) => (
             <td style={{ padding: "0 24px 24px 24px" }}>
               <table width="100%" cellPadding="0" cellSpacing="0">
                 <tr>
-                  <td
-                    style={{
-                      fontSize: "14px",
-                      color: "#6b7280",
-                    }}
-                  >
+                  <td style={{ fontSize: "14px", color: "#6b7280" }}>
                     <strong>Email:</strong> {email}
                   </td>
                 </tr>
@@ -100,7 +91,6 @@ export const EmailTemplate = ({ messageData, name, email }) => (
             </td>
           </tr>
 
-          {/* Footer */}
           <tr>
             <td
               style={{
@@ -111,7 +101,7 @@ export const EmailTemplate = ({ messageData, name, email }) => (
                 borderTop: "1px solid #e5e7eb",
               }}
             >
-              © 2025 Avnish Kumar. All rights reserved.
+              © 2026 Alfred Imoh. All rights reserved.
             </td>
           </tr>
         </table>
@@ -142,7 +132,6 @@ export const EmailTemplate2 = ({ name }) => (
             borderRadius: "8px",
           }}
         >
-  
           <tr>
             <td
               style={{
@@ -157,7 +146,7 @@ export const EmailTemplate2 = ({ name }) => (
                   fontWeight: "normal",
                 }}
               >
-                We’ve received your message
+                We've received your message
               </h3>
             </td>
           </tr>
@@ -167,20 +156,17 @@ export const EmailTemplate2 = ({ name }) => (
               <p style={{ margin: "0 0 14px 0" }}>
                 Dear {name},
               </p>
-
               <p style={{ margin: "0 0 14px 0", lineHeight: "1.6" }}>
                 Thank you for reaching out. This is just a quick note to let you
                 know that your message has been received safely.
               </p>
-
               <p style={{ margin: "0 0 14px 0", lineHeight: "1.6" }}>
                 I truly appreciate you taking the time to write. I will review
                 your message and get back to you as soon as possible.
               </p>
-
               <p style={{ margin: "20px 0 0 0" }}>
                 Warm regards,<br />
-                Avnish Kumar
+                Alfred Imoh
               </p>
             </td>
           </tr>
@@ -195,7 +181,7 @@ export const EmailTemplate2 = ({ name }) => (
                 borderTop: "1px solid #e0e0e0",
               }}
             >
-              © 2025 Avnish Kumar. All rights reserved.
+              © 2026 Alfred Imoh. All rights reserved.
             </td>
           </tr>
         </table>

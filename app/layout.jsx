@@ -47,14 +47,10 @@ export const metadata = {
     siteName: "Alfred Imoh",
     images: [
       {
-        url: "/avnishkumar/avnish.jpg",
-        width: 600,
-        height: 600,
-      },
-      {
-        url: "/avnishkumar/avnishkumar.jpg",
-        width: 500,
-        height: 600,
+        url: "/hero/bg.png", // ← converted from bg.svg to bg.png
+        width: 1200,
+        height: 630,
+        alt: "Alfred Imoh – Full Stack Developer Portfolio",
       },
     ],
     locale: "en_US",
@@ -73,7 +69,7 @@ export const metadata = {
     siteId: "",
     creator: "@theavnishkumar",
     creatorId: "@theavnishkumar",
-    images: ["/avnishkumar/avnishkumar.jpg"],
+    images: ["/hero/bg.png"], // ← updated here too
   },
   verification: {
     google: "google",

@@ -5,49 +5,48 @@ import Provider from "@/components/Provider";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
-  title:
-    "Alfred Imoh – Full Stack Web Developer | MERN & JavaScript Developer",
+  title: "Alfred Imoh – Full Stack Developer | React, Next.js & Node.js",
   description:
-    "Alfred Imoh is a Full Stack Web Developer from Buxar, Bihar, and a 2024 Computer Science graduate from Gyan Ganga Institute of Technology and Sciences, Jabalpur. He builds fast, clean, and responsive web apps using React, Node.js, Express, MongoDB, NestJS, and TypeScript.",
+    "Alfred Imoh is a full-stack software engineer who builds modern, end-to-end web applications with a focus on clean code and real-world impact. He works across React, Node.js, FastAPI, PostgreSQL, and Docker.",
   keywords: [
-    "Alfred",
     "Alfred Imoh",
-    "theavnishkumar",
-    "Alfred Imoh web developer",
-    "Alfred Imoh full stack developer",
-    "Alfred Imoh MERN developer",
-    "Alfred Imoh NestJS",
-    "Alfred Imoh JavaScript",
-    "Alfred Imoh Jabalpur",
-    "Alfred Imoh Buxar",
+    "Alfred Imoh developer",
     "Alfred Imoh portfolio",
-    "Full Stack Developer India",
-    "MERN Stack Developer Bihar",
-    "JavaScript Developer India",
-    "React Node Developer",
+    "Alfred Imoh Nigeria",
+    "Full Stack Developer Nigeria",
+    "React Developer Nigeria",
+    "Next.js Developer",
+    "Node.js Developer",
+    "FastAPI Developer",
+    "PostgreSQL Developer",
+    "Docker",
+    "JavaScript Developer",
+    "Full Stack Software Engineer",
+    "SaaS Developer",
+    "eCommerce Developer",
   ],
   authors: [
     { name: "Alfred Imoh" },
-    { name: "Alfred Imoh", url: "https://theavnishkumar.in" },
+    { name: "Alfred Imoh", url: "https://imoh-portfolio.vercel.app" },
   ],
   creator: "Alfred Imoh",
   publisher: "Alfred Imoh",
   category: "Technology",
-  metadataBase: new URL("https://theavnishkumar.in"),
+  metadataBase: new URL("https://imoh-portfolio.vercel.app"),
   formatDetection: {
     email: true,
     address: false,
     telephone: false,
   },
   openGraph: {
-    title: "Alfred Imoh – Full Stack Developer | React, Node, MongoDB",
+    title: "Alfred Imoh – Full Stack Developer | React, Next.js & Node.js",
     description:
-      "Explore the portfolio of Alfred Imoh, a Full Stack Developer skilled in MERN stack, TypeScript, Java, and more. Based in Bihar, India – building modern web apps with React, Node.js, and MongoDB.",
-    url: "https://theavnishkumar.in",
+      "Full-stack software engineer building modern web apps with React, Node.js, FastAPI, PostgreSQL, and Docker. Shipped products across SaaS, eCommerce, and lead generation.",
+    url: "https://imoh-portfolio.vercel.app",
     siteName: "Alfred Imoh",
     images: [
       {
-        url: "/hero/bg.png", // ← converted from bg.svg to bg.png
+        url: "/hero/bg.png",
         width: 1200,
         height: 630,
         alt: "Alfred Imoh – Full Stack Developer Portfolio",
@@ -65,11 +64,11 @@ export const metadata = {
     card: "summary_large_image",
     title: "Alfred Imoh – Full Stack Developer | React & Node.js",
     description:
-      "Alfred Imoh is a Full Stack Web Developer from Bihar, India. Skilled in JavaScript, React, Node.js, MongoDB, NestJS, and more. Visit portfolio to know more.",
+      "Full-stack software engineer building modern web apps with React, Node.js, FastAPI, PostgreSQL, and Docker. Clean code. Real-world impact.",
     siteId: "",
-    creator: "@theavnishkumar",
-    creatorId: "@theavnishkumar",
-    images: ["/hero/bg.png"], // ← updated here too
+    creator: "@Alfred_Imoh",
+    creatorId: "@Alfred_Imoh",
+    images: ["/hero/bg.png"],
   },
   verification: {
     google: "google",
